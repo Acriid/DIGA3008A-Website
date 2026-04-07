@@ -4,38 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="Css/hompage.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="./Pages/about.html">About</a></li>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./Pages/work.html">Work</a></li>
-            </ul>
+    <header class="top-nav">
+        <nav class="nav-links">
+            <a href="./Pages/about.html">About</a>
+            <a href="./index.html">Home</a>
+            <a href="./Pages/work.html">Work</a>
         </nav>
-        <h1 id="Homepage">Homepage</h1>
     </header>
 
     <main>
-        <h2>A placeholder header</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Minima magnam odio amet voluptates totam dicta voluptatibus 
-                accusantium soluta quibusdam maiores expedita fugiat atque laboriosam, 
-                quidem deserunt rerum. Enim, quam. Impedit?</p>
+        <section class="hero">
+            <h1>Home</h1>
+        </section>
         
-        <figure>
-            <img 
-            src="./Assets/Images/VoidDevastator.png" 
-            alt="An image of a VoidDevastator from risk of rain 2">
-        </figure>
-    </main>
+        <section class="body-cards">
+            <div class="projects">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        
+                    </div>
+                    <div class="project-card">
+                        
+                    </div>
+                    <div class="project-card">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="aboutme">
+                <h2>About Me</h2>
+                <div class="about-grid">
+                    <p>
+                        Something something
+                    </p>
+                </div>
+            </div>
+        </section>
 
-    <footer>
-        This is the footer of the website
-        <time datetime="2026-02-12">12 February 2026</time>
-        <p><a href="#Homepage">Back to top</a></p>
-    </footer>
+    </main>
 </body>
 </html>
