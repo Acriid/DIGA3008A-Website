@@ -1,4 +1,0 @@
-The files entry point is index.html because it is in the root of the folder
-
-Broken paths show up after deployment due to file paths breaking 
-because they were not using relative file paths.

@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="Css/hompage.css">
+    <link rel="stylesheet" href="Css/navigation.css">
+    <script src="JS/navigation.js" defer></script>
+    <script src="JS/index.js" defer></script>
 </head>
 <body>
 
     <header class="top-nav">
         <nav class="nav-links">
-            <a href="./Pages/about.html">About</a>
-            <a href="./index.html">Home</a>
-            <a href="./Pages/projects.html">Work</a>
+            <button class="navButton" id="navButton1"></button>
+            <button class="navButton" id="navButton2"></button>
+            <button class="navButton" id="navButton3"></button>
         </nav>
     </header>
 
@@ -23,15 +26,15 @@
         
         <section class="body-cards">
             <div class="projects">
-                <h2>Projects</h2>
+                <h2 id="project-title">Projects</h2>
                 <div class="projects-grid">
-                    <div class="project-card">
+                    <div class="project-card" id="projectCard1">
                         
                     </div>
-                    <div class="project-card">
+                    <div class="project-card" id="projectCard2">
                         
                     </div>
-                    <div class="project-card">
+                    <div class="project-card" id="projectCard3">
                         
                     </div>
                 </div>
@@ -40,7 +43,7 @@
                 <h2>About Me</h2>
                 <div class="about-grid">
                     <p>
-                        Something something
+                        I am a university student currently studying
                     </p>
                 </div>
             </div>

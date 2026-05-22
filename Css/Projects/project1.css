@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 2070px;
+    display: grid;
+    grid-template-rows: 50px 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "hero"
+    "projects"
+    "about"
+    "footer";
+
+    background-color: #08001B;
+    color: #f7f7f7;
+}
+
+.top-nav {
+    width: 100%;
+    grid-area: header;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20vw;
+}
+
+.nav-links a{
+    color: #f7f7f7;
+    text-decoration: none;
+}
+
+.nav-links a:hover{
+    color: rgb(95, 92, 92);
+}
+
+
+
+
+
+
