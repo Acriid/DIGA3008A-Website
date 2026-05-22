@@ -1,28 +1,82 @@
-// const projectSection = document.querySelector(".projectstable");
+const table = document.getElementById("table");
+const sortHeader = document.getElementById("sort-name");
 
-// const table = document.createElement("table");
+const projects = [
+    {
+        name: "A",
+        description: "Description 1",
+        status: "Ongoing",
+        date: "Today",
+        link: "/Pages/Projects/project1.html"
+    },
+    {
+        name: "B",
+        description: "Description 2",
+        status: "Finished",
+        date: "Tomorrow",
+        link: "/Pages/Projects/project2.html"
+    }
+];
 
-// // Create header row
-// const headerRow = table.insertRow();
+let ascending = true;
 
-// const header1 = document.createElement("th");
-// header1.textContent = "Project Name";
 
-// const header2 = document.createElement("th");
-// header2.textContent = "Language";
+function MakeTableEntry(rowData,table){
+    const row = table.insertRow();
 
-// // Add headers to row
-// headerRow.appendChild(header1);
-// headerRow.appendChild(header2);
+    // Project Name cell
+    const nameCell = row.insertCell();
 
-// // Create normal row
-// const row = table.insertRow();
+    const link = document.createElement("a");
+    link.href = rowData.link;
+    link.textContent = rowData.name;
 
-// const cell1 = row.insertCell();
-// cell1.textContent = "Portfolio Website";
+    nameCell.appendChild(link);
 
-// const cell2 = row.insertCell();
-// cell2.textContent = "JavaScript";
+    // Other cells
+    const descriptionCell = row.insertCell();
+    descriptionCell.textContent = rowData.description;
 
-// // Add table to section
-// projectSection.appendChild(table);
+    const statusCell = row.insertCell();
+    statusCell.textContent = rowData.status;
+
+    const dateCell = row.insertCell();
+    dateCell.textContent = rowData.date;
+}
+
+function RenderTable(projects,table)
+{
+    // Remove all rows except header
+    while (table.rows.length > 1)
+    {
+        table.deleteRow(1);
+    }
+
+    // Re-add rows
+    projects.forEach(project => {
+        MakeTableEntry(project, table);
+    });
+}
+
+
+sortHeader.addEventListener("click", () =>
+{
+    projects.sort((a, b) =>
+    {
+        return ascending
+            ? a.name.localeCompare(b.name)
+            : b.name.localeCompare(a.name);
+    });
+
+    ascending = !ascending;
+
+
+    sortHeader.textContent = ascending
+        ? "Project Name ▼"
+        : "Project Name ▲";
+
+    RenderTable(projects,table);
+});
+
+
+RenderTable(projects,table);

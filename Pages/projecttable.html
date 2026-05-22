@@ -18,21 +18,24 @@
         </nav>
     </header>
     <main>
-        <section class="hero"></section>
-        <section class="projectstable">
-            <table>
+        <section class="hero">
+            <h1>Project Table</h1>
+        </section>
+        <section class="tableSearch">
+            <form role="search">
+                <label for="table-search">Search the table:</label>
+                <input type="search" id="table-search" name="q" placeholder="Search...">
+            </form>
+        </section>
+        <section class="projects-table">
+
+            <table id="table">
                 <tbody>
                     <tr>
-                        <th>Project Name</th>
+                        <th id="sort-name">Project Name</th>
                         <th>Project Description</th>
                         <th>Project Status</th>
                         <th>Project Date</th>
-                    </tr>
-                    <tr>
-                        <td>Project 1</td>
-                        <td>Description 1</td>
-                        <td>Ongoing</td>
-                        <td>Today</td>
                     </tr>
                 </tbody>
             </table>
