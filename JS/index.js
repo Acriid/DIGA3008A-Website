@@ -55,3 +55,15 @@ const projectTitle = document.getElementById("project-title");
 projectTitle.addEventListener("click", function(){
         window.location.href = "/Pages/projects.html";
 });
+
+//Load file
+const aboutParagraph = document.getElementById("about-text");
+
+fetch("/Text/index/aboutme.txt")
+    .then(response => response.text())
+    .then(data => {
+        aboutParagraph.textContent = data
+    })
+    .catch(error =>{
+        console.error("Could not load aboutme.txt");
+    });
