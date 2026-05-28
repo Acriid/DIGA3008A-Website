@@ -1,22 +1,9 @@
 const table = document.getElementById("table");
 const sortHeader = document.getElementById("sort-name");
 
-const projects = [
-    {
-        name: "A",
-        description: "Description 1",
-        status: "Ongoing",
-        date: "Today",
-        link: "/Pages/Projects/project1.html"
-    },
-    {
-        name: "B",
-        description: "Description 2",
-        status: "Finished",
-        date: "Tomorrow",
-        link: "/Pages/Projects/project2.html"
-    }
-];
+import { projectLinks } from "/JS/projectdata.js";
+
+console.log(projectLinks);
 
 let ascending = true;
 
@@ -28,7 +15,7 @@ function MakeTableEntry(rowData,table){
     const nameCell = row.insertCell();
 
     const link = document.createElement("a");
-    link.href = rowData.link;
+    link.href = rowData.href;
     link.textContent = rowData.name;
 
     nameCell.appendChild(link);
@@ -38,10 +25,10 @@ function MakeTableEntry(rowData,table){
     descriptionCell.textContent = rowData.description;
 
     const statusCell = row.insertCell();
-    statusCell.textContent = rowData.status;
+    statusCell.textContent = rowData.complete;
 
     const dateCell = row.insertCell();
-    dateCell.textContent = rowData.date;
+    dateCell.textContent = rowData.dateStarted;
 }
 
 function RenderTable(projects,table)
@@ -79,4 +66,4 @@ sortHeader.addEventListener("click", () =>
 });
 
 
-RenderTable(projects,table);
+RenderTable(projectLinks,table);

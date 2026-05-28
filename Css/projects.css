@@ -94,19 +94,19 @@ body {
     margin-bottom: 20vh;
 }
 
-.current-card {
+.project-card {
     width: 400px;
     aspect-ratio: 3/2.5;
     overflow: hidden;
     background-color: #1E1B4B;
 }
 
-.current-card:hover {
+.project-card:hover {
     width: 600px;
     cursor: pointer;
 }
 
-.current-card-img {
+.project-card-img {
     width: 100%;
     height: 100%;
     object-fit: contain;          

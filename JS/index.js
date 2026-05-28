@@ -2,12 +2,10 @@ const projectCard1 = document.getElementById("projectCard1");
 const projectCard2 = document.getElementById("projectCard2");
 const projectCard3 = document.getElementById("projectCard3");
 
-const projectLinks = [
-  {name: "Project 1", href: "/Pages/Projects/project1.html", imgref: "/Assets/Images/Projects/FairyFlight.jpg"},
-  {name: "Project 2", href: "/Pages/Projects/project2.html", imgref: "/Assets/Images/Projects/fairy.jpg"},
-  {name: "Project 3", href: "/Pages/Projects/project3.html", imgref: "/Assets/Images/Projects/FairyMagic.jpg"},
-];
-3
+import { projectLinks } from "/JS/projectdata.js";
+
+console.log(projectLinks);
+
 
 function PickRandomProject(projectList){
     return projectList[Math.floor(Math.random() * projectList.length)];
