@@ -73,6 +73,7 @@ body {
     justify-items: center;
     align-items: center;
     margin-bottom: 20vh;
+    background-color: #1E1B4B;
 }
 
 
@@ -80,7 +81,7 @@ body {
     width: 400px;
     aspect-ratio: 3/2.5;
     overflow: hidden;
-    background-color: #1E1B4B;
+    background-color: #08001B;
     
 }
 
@@ -111,7 +112,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #1E1B4B;
 }
+
+
 
 
 
