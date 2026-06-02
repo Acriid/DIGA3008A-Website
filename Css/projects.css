@@ -47,6 +47,7 @@ body {
 .hero {
     grid-area: hero;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 20vh;
@@ -55,6 +56,9 @@ body {
 
 .hero h1{
     color: #f7f7f7;
+}
+.hero button{
+    margin-top: 4rem;
 }
 
 
@@ -66,14 +70,6 @@ body {
 
 .current-grid {
     grid-area: current;
-    width: 100%;
-    height: 500px;
-    border: 1px solid white;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    justify-items: center;
-    align-items: center;
-    margin-bottom: 20vh;
 }
 
 .previous h2{
@@ -84,21 +80,13 @@ body {
 
 .previous-grid {
     grid-area: previous;
-    width: 100%;
-    height: 500px;
-    border: 1px solid white;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    justify-items: center;
-    align-items: center;
-    margin-bottom: 20vh;
 }
 
 .project-card {
     width: 400px;
     aspect-ratio: 3/2.5;
     overflow: hidden;
-    background-color: #1E1B4B;
+    background-color: #08001B;
 }
 
 .project-card:hover {
@@ -117,6 +105,7 @@ body {
 .grid-wrapper {
     position: relative;
     width: 100%;
+    background-color: #1E1B4B;
 }
 
 .grid-button {

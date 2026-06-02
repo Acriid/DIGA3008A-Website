@@ -3,7 +3,7 @@
 
 export const projectLinks = [
   {
-    name: "Project 1", 
+    name: "Hidden Lab", 
     description: "Description 1",
     longDescriptionRef: "/Text/Projects/project1.txt",
     href: "/Pages/Projects/project1.html", 

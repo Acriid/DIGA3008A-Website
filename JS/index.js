@@ -4,9 +4,6 @@ const projectCard3 = document.getElementById("projectCard3");
 
 import { projectLinks } from "/JS/projectdata.js";
 
-console.log(projectLinks);
-
-
 function PickRandomProject(projectList){
     return projectList[Math.floor(Math.random() * projectList.length)];
 }
@@ -19,32 +16,34 @@ function SetProjects(){
     let randomProject = PickRandomProject(projectLinksCopy);
     projectLinksCopy = projectLinksCopy.filter(project => project.name !== randomProject.name);
 
-    projectCard1.addEventListener("click", function(){
-        window.location.href = randomProject.href;
-    });
-    projectCard1.innerHTML = `<img src= ${randomProject.imgref}
-     class="project-img">`;
+    SetCard(projectCard1,randomProject);
 
     randomProject = PickRandomProject(projectLinksCopy);
     projectLinksCopy = projectLinksCopy.filter(project => project.name !== randomProject.name);
 
-    projectCard2.addEventListener("click", function(){
-        window.location.href = randomProject.href;
-    });
-    projectCard2.innerHTML = `<img src= ${randomProject.imgref}
-     class="project-img">`;
+    SetCard(projectCard2,randomProject);
 
     randomProject = PickRandomProject(projectLinksCopy);
     projectLinksCopy = projectLinksCopy.filter(project => project.name !== randomProject.name);
  
-    projectCard3.addEventListener("click", function(){
-        window.location.href = randomProject.href;
-    });
-    projectCard3.innerHTML = `<img src= ${randomProject.imgref}
-     class="project-img">`;
+    SetCard(projectCard3,randomProject);
 
 }
 
+function SetCard(card,project){
+    card.addEventListener("click", function(){
+        window.location.href = project.href;
+    });
+
+
+    card.innerHTML = `
+        <img src="${project.imgref}" class="project-img">
+
+        <div class="project-description body-text-small">
+            ${project.description}
+        </div>
+    `;
+}
 SetProjects();
 
 
