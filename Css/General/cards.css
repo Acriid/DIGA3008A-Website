@@ -1,12 +1,3 @@
-.navButton{
-    /* background: none; */
-    background-color: #1E1B4B;
-    padding: 0.313rem;
-    border: none;
-    color: #f7f7f7;
-    cursor: pointer;
-}
-
 .card-grid {
     width: 100%;
     height: 500px;
@@ -16,12 +7,4 @@
     justify-items: center;
     align-items: center;
     margin-bottom: 20vh;
-}
-
-.example {
-    width: 50px;
-}
-
-.example {
-    width: 100px;
 }

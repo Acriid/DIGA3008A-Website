@@ -37,7 +37,7 @@ function ShowProjectOnCard(project,card){
         window.location.href = project.href;
     };
     card.innerHTML = `<img src= ${project.imgref}
-     class="project-card-img">`;
+     class="project-img">`;
 }
 
 

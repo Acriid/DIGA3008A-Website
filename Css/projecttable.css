@@ -18,17 +18,11 @@ body {
     color: #f7f7f7;
 }
 
-
-
-.nav-links {
-    display: flex;
-    gap: 20vw;
+.top-nav {
+    grid-area: header;
 }
 
-.nav-links a{
-    color: #f7f7f7;
-    text-decoration: none;
-}
+
 
 .nav-links a:hover{
     color: rgb(95, 92, 92);
