@@ -1,67 +1,98 @@
+@font-face {
+    font-family: "Inter";
+    src: url(/fonts/Inter-VariableFont_opsz,wght.ttf) format("truetype");
+    font-weight: 100 900;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url(/fonts/PlayfairDisplay-VariableFont_wght.ttf) format("truetype");
+    font-weight: 400 900;
+}
+
 @media (min-width: 700px)
 {
     h1 {
         font-size: 3.75rem;
+        font-family: "Playfair Display", serif;
     }
     h2 {
         font-size: 3rem;
+        font-family: "Playfair Display", serif;
     }
     h3 {
         font-size: 2.5rem;
+        font-family: "Playfair Display", serif;
     }
     h4 {
         font-size: 2rem;
+        font-family: "Playfair Display", serif;
     }
     h5 {
         font-size: 1.5rem;
+        font-family: "Playfair Display", serif;
     }
     h6 {
         font-size: 1.25rem;
+        font-family: "Playfair Display", serif;
     }
     
     .button {
         font-size: 1.25rem;
+        font-family: "Inter", sans-serif;
     }
     
     .body-text{
         font-size: 1.125rem;
+        font-family: "Inter", sans-serif;
     }
     
     .body-text-small{
         font-size: 1rem;
+        font-family: "Inter", sans-serif;
     }
+
 }
 
 @media (max-width: 700px)
 {
     h1 {
         font-size: 3.5rem;
+        font-family: "Playfair Display", serif;
     }
     h2 {
         font-size: 2.75rem;
+        font-family: "Playfair Display", serif;
     }
     h3 {
         font-size: 2.25rem;
+        font-family: "Playfair Display", serif;
     }
     h4 {
         font-size: 1.75rem;
+        font-family: "Playfair Display", serif;
     }
     h5 {
         font-size: 1.25rem;
+        font-family: "Playfair Display", serif;
     }
     h6 {
         font-size: 1rem;
+        font-family: "Playfair Display", serif;
     }
     
     .button {
         font-size: 1rem;
+        font-family: "Inter", sans-serif;
     }
     
     .body-text{
         font-size: 1rem;
+        font-family: "Inter", sans-serif;
     }
     
     .body-text-small{
         font-size: 0.875rem;
+        font-family: "Inter", sans-serif;
     }
 }

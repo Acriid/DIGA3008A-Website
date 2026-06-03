@@ -3,6 +3,16 @@ const projectCard2 = document.getElementById("projectCard2");
 const projectCard3 = document.getElementById("projectCard3");
 
 import { projectLinks } from "/JS/projectdata.js";
+import { PreloadProjectDescriptions } from "/JS/projectdata.js";
+
+async function InitializePage()
+{
+    await PreloadProjectDescriptions();
+
+    SetProjects();
+}
+
+InitializePage();
 
 function PickRandomProject(projectList){
     return projectList[Math.floor(Math.random() * projectList.length)];
@@ -40,18 +50,11 @@ function SetCard(card,project){
         <img src="${project.imgref}" class="project-img">
 
         <div class="project-description body-text-small">
-            ${project.description}
+            ${project.longDescription}
         </div>
     `;
 }
-SetProjects();
 
-
-const projectTitle = document.getElementById("project-title");
-
-projectTitle.addEventListener("click", function(){
-        window.location.href = "/Pages/projects.html";
-});
 
 //Load file
 const aboutParagraph = document.getElementById("about-text");

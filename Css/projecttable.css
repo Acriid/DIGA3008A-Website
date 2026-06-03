@@ -18,15 +18,6 @@ body {
     color: #f7f7f7;
 }
 
-.top-nav {
-    grid-area: header;
-}
-
-
-
-.nav-links a:hover{
-    color: rgb(95, 92, 92);
-}
 
 .hero {
     grid-area: hero;

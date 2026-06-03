@@ -60,26 +60,8 @@ body {
     grid-area: previous;
 }
 
-.project-card {
-    width: 400px;
-    aspect-ratio: 3/2.5;
-    overflow: hidden;
-    background-color: #08001B;
-}
 
-.project-card:hover {
-    width: 600px;
-    cursor: pointer;
-}
-
-.project-img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;          
-    object-position: center;    
-    display: block;             
-}
-
+/* #region Carousel buttons to move it*/
 .grid-wrapper {
     position: relative;
     width: 100%;
@@ -114,3 +96,5 @@ body {
 .right-button {
     right: 20px;
 }
+/* #endregion */
+

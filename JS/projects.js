@@ -1,3 +1,4 @@
+//#region Setup
 const currentCard1 = document.getElementById("current-card1");
 const currentCard2 = document.getElementById("current-card2");
 const currentCard3 = document.getElementById("current-card3");
@@ -23,15 +24,20 @@ const rightPreviousButton = document.getElementById("right-button-previous");
 const leftCurrentButton = document.getElementById("left-button-current");
 const rightCurrentButton = document.getElementById("right-button-current");
 
+const projectTableButton = document.getElementById("project-button");
+
 import { projectLinks } from "/JS/projectdata.js";
 
 const currentProjects = projectLinks.filter(project => project.complete === false);
 const completeProjects = projectLinks.filter(project => project.complete === true);
+//#endregion
+
 
 function PickRandomIndexFromList(projectList){
     return Math.floor(Math.random() * projectList.length);
 }
 
+//#region card functions
 function ShowProjectOnCard(project,card){
     card.onclick = function(){
         window.location.href = project.href;
@@ -61,8 +67,9 @@ function ShowProjectCards(currentIndex,projectCards,projectsToShow)
         );
     }
 }
+//#endregion
 
-
+//carousel function
 function ChangeNumber(number, increase, min, max)
 {
     if(max < min) return min;
@@ -75,6 +82,11 @@ function ChangeNumber(number, increase, min, max)
     return newNumber;
 }
 
+projectTableButton.onclick = function(){
+    window.location.href = "/Pages/projecttable.html";
+};
+
+//#region Image carousel buttons
 let currentIndex = PickRandomIndexFromList(currentProjects);
 let previousIndex = PickRandomIndexFromList(completeProjects);
 ShowProjectCards(currentIndex,currentCards,currentProjects);
@@ -100,7 +112,7 @@ rightCurrentButton.addEventListener("click", function(){
     currentIndex = ChangeNumber(currentIndex,1,0,currentProjects.length -1);
     ShowProjectCards(currentIndex,currentCards,currentProjects);
 });
-
+//#endregion
 
 
 

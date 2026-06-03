@@ -29,6 +29,10 @@ function MakeTableEntry(rowData,table){
 
     const dateCell = row.insertCell();
     dateCell.textContent = rowData.dateStarted;
+
+    [descriptionCell, statusCell, dateCell].forEach(cell => {
+        cell.classList.add("body-text-small");
+    });
 }
 
 function RenderTable(projects,table)
@@ -45,7 +49,7 @@ function RenderTable(projects,table)
     });
 }
 
-
+//Sort table by name
 sortHeader.addEventListener("click", () =>
 {
     projects.sort((a, b) =>

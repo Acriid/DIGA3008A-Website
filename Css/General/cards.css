@@ -8,3 +8,23 @@
     align-items: center;
     margin-bottom: 20vh;
 }
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;          
+    object-position: center;    
+    display: block;             
+}
+
+.project-card {
+    width: 400px;
+    aspect-ratio: 3/2.5;
+    overflow: hidden;
+    background-color: #08001B;
+    position: relative;
+}
+
+.project-card:hover {
+    width: 600px;
+    cursor: pointer;
+}
