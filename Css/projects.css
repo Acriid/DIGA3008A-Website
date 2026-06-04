@@ -21,6 +21,9 @@ body {
     color: #f7f7f7;
 }
 
+.top-nav{
+    grid-area: header;
+}
 
 .hero {
     grid-area: hero;
@@ -97,4 +100,8 @@ body {
     right: 20px;
 }
 /* #endregion */
+
+.contacts{
+    grid-area: footer;
+}
 

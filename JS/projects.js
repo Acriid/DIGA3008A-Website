@@ -1,4 +1,5 @@
 //#region Setup
+//Current Cards
 const currentCard1 = document.getElementById("current-card1");
 const currentCard2 = document.getElementById("current-card2");
 const currentCard3 = document.getElementById("current-card3");
@@ -9,6 +10,7 @@ const currentCards = [
     currentCard3
 ];
 
+//Previous Cards
 const previousCard1 = document.getElementById("previous-card1");
 const previousCard2 = document.getElementById("previous-card2");
 const previousCard3 = document.getElementById("previous-card3");
@@ -19,6 +21,7 @@ const previousCards = [
     previousCard3
 ];
 
+//Buttons
 const leftPreviousButton = document.getElementById("left-button-previous");
 const rightPreviousButton = document.getElementById("right-button-previous");
 const leftCurrentButton = document.getElementById("left-button-current");
@@ -26,7 +29,9 @@ const rightCurrentButton = document.getElementById("right-button-current");
 
 const projectTableButton = document.getElementById("project-button");
 
+//ProjectData
 import { projectLinks } from "/JS/projectdata.js";
+import { PreloadProjectDescriptions } from "/JS/projectdata.js";
 
 const currentProjects = projectLinks.filter(project => project.complete === false);
 const completeProjects = projectLinks.filter(project => project.complete === true);
@@ -38,15 +43,26 @@ function PickRandomIndexFromList(projectList){
 }
 
 //#region card functions
-function ShowProjectOnCard(project,card){
+//Set single card
+function SetCards(project,card){
     card.onclick = function(){
         window.location.href = project.href;
     };
-    card.innerHTML = `<img src= ${project.imgref}
-     class="project-img">`;
+
+
+    card.innerHTML = `
+        <img src="${project.imgref}" class="project-img">
+
+        <div class="project-title body-text-small">
+            ${project.name}
+        </div>
+        <div class="project-description body-text-small">
+            ${project.longDescription}
+        </div>
+    `;
 }
 
-
+//Goes through all cards and sets them based on current projectIndex
 function ShowProjectCards(currentIndex,projectCards,projectsToShow)
 {
     if(projectsToShow.length === 0) return;
@@ -61,7 +77,7 @@ function ShowProjectCards(currentIndex,projectCards,projectsToShow)
 
         const selectedProject = projectsToShow[projectIndex];
 
-        ShowProjectOnCard(
+        SetCards(
             selectedProject,
             projectCards[i]
         );
@@ -86,13 +102,23 @@ projectTableButton.onclick = function(){
     window.location.href = "/Pages/projecttable.html";
 };
 
-//#region Image carousel buttons
+
+//Loads descriptions first then loads page
 let currentIndex = PickRandomIndexFromList(currentProjects);
 let previousIndex = PickRandomIndexFromList(completeProjects);
-ShowProjectCards(currentIndex,currentCards,currentProjects);
-ShowProjectCards(previousIndex,previousCards,completeProjects);
+
+async function InitializeProjects(){
+    await PreloadProjectDescriptions();
+    ShowProjectCards(currentIndex,currentCards,currentProjects);
+    ShowProjectCards(previousIndex,previousCards,completeProjects);
+}
+
+InitializeProjects();
 
 
+
+
+//#region Image carousel buttons
 leftPreviousButton.addEventListener("click", function(){
     previousIndex = ChangeNumber(previousIndex,-1,0,completeProjects.length -1);
     ShowProjectCards(previousIndex,previousCards,completeProjects);
@@ -113,6 +139,3 @@ rightCurrentButton.addEventListener("click", function(){
     ShowProjectCards(currentIndex,currentCards,currentProjects);
 });
 //#endregion
-
-
-

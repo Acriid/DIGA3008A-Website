@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="/Css/General/fonts.css">
     <link rel="stylesheet" href="/Css/General/cards.css">
     <link rel="stylesheet" href="/Css/General/buttons.css">
+    <link rel="stylesheet" href="/Css/General/footer.css">
     <link rel="stylesheet" href="/Css/projects.css">
     <script src="/JS/navigation.js" defer></script>
+    <script src="/JS/footer.js" defer></script>
     <script type="module" src="/JS/projects.js"></script>
 </head>
 <body>
@@ -27,7 +29,7 @@
                     <h2>Current</h2>
 
                     <div class="grid-wrapper">
-                        <button class="grid-button left-button" id="left-button-current">◀</button>
+                        
                         
                         <div class="current-grid card-grid">
                             <div class="project-card" id="current-card1"></div>
@@ -35,6 +37,7 @@
                             <div class="project-card" id="current-card3"></div>
                         </div>
 
+                        <button class="grid-button left-button" id="left-button-current">◀</button>
                         <button class="grid-button right-button" id="right-button-current">▶</button>
                     </div>
                 </div>
@@ -43,7 +46,6 @@
                     <h2>Previous</h2>
 
                     <div class="grid-wrapper">
-                        <button class="grid-button left-button" id="left-button-previous">◀</button>
 
                         <div class="previous-grid card-grid">
                             <div class="project-card" id="previous-card1"></div>
@@ -51,6 +53,7 @@
                             <div class="project-card" id="previous-card3"></div>
                         </div>
 
+                        <button class="grid-button left-button" id="left-button-previous">◀</button>
                         <button class="grid-button right-button" id="right-button-previous">▶</button>
                     </div>
 
@@ -58,9 +61,7 @@
             </section>
     </main>  
     
-    <footer>
-        This is the footer of the website
-        <time datetime="2026-02-12">12 February 2026</time>
-    </footer>
+    <div id="contact-container"></div>
+
 </body>
 </html>

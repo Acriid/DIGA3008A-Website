@@ -1,1 +1,2 @@
-Testing text
+Hidden Lab is a game about a slime trying to escape from an abandoned laboratory.
+It was made in my second year of study.

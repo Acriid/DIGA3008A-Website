@@ -11,17 +11,17 @@ export const projectLinks = [
     longDescription: "",
     href: "/Pages/Projects/project1.html", 
     imgref: "/Assets/Images/Projects/Temp/FairyFlight.jpg", 
-    complete: false,
+    complete: true,
     dateStarted: "DD/MM/YY"
   },
   {
-    name: "Project 2", 
-    description: "Description 2",
+    name: "Cult Game", 
+    description: "A game about a detective investigating a cult",
     longDescriptionRef: "/Text/Projects/project2.txt",
     longDescription: "",
     href: "/Pages/Projects/project2.html", 
     imgref: "/Assets/Images/Projects/Temp/fairy.jpg", 
-    complete: false,
+    complete: true,
     dateStarted: "DD/MM/YY"
   },
   {
@@ -35,8 +35,8 @@ export const projectLinks = [
     dateStarted: "DD/MM/YY"
   },
   {
-    name: "Project 4", 
-    description: "Description 4",
+    name: "This Website", 
+    description: "The website is constantly updating and developing",
     longDescriptionRef: "/Text/Projects/project4.txt",
     longDescription: "",
     href: "/Pages/Projects/project4.html", 

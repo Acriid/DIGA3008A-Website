@@ -41,14 +41,17 @@ function SetProjects(){
 }
 
 function SetCard(card,project){
-    card.addEventListener("click", function(){
+    card.onclick = function(){
         window.location.href = project.href;
-    });
+    };
 
 
     card.innerHTML = `
         <img src="${project.imgref}" class="project-img">
 
+        <div class="project-title body-text-small">
+            ${project.name}
+        </div>
         <div class="project-description body-text-small">
             ${project.longDescription}
         </div>

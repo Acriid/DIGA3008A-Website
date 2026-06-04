@@ -12,7 +12,8 @@ body {
     grid-template-areas: 
     "header"
     "hero"
-    "table";
+    "table"
+    "footer";
 
     background-color: #08001B;
     color: #f7f7f7;

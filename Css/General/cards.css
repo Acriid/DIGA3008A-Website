@@ -19,12 +19,44 @@
 .project-card {
     width: 400px;
     aspect-ratio: 3/2.5;
-    overflow: hidden;
+    transition: transform 0.3s ease;
     background-color: #08001B;
     position: relative;
 }
 
 .project-card:hover {
-    width: 600px;
+    transform: scale(1.4);
     cursor: pointer;
+}
+
+
+.project-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0.75rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #f7f7f7;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+
+.project-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 60%;
+    padding: 0.75rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #f7f7f7;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.project-card:hover .project-description{
+    opacity: 1;
+}
+.project-card:hover .project-title{
+    opacity: 1;
 }

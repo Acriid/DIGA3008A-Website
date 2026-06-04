@@ -12,19 +12,24 @@ body {
     grid-template-areas: 
     "header"
     "hero"
-    "projects"
-    "about"
     "footer";
 
     background-color: #08001B;
     color: #f7f7f7;
 }
 
+.hero {
+    grid-area: hero;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20vh;
+    margin-top: 20vh;
+}
+
 .top-nav {
     grid-area: header;
 }
-
-
 
 .nav-links a:hover{
     color: rgb(95, 92, 92);

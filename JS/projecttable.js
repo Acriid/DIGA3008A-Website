@@ -3,9 +3,7 @@ const sortHeader = document.getElementById("sort-name");
 
 import { projectLinks } from "/JS/projectdata.js";
 
-console.log(projectLinks);
 
-let ascending = true;
 
 
 function MakeTableEntry(rowData,table){
@@ -25,7 +23,14 @@ function MakeTableEntry(rowData,table){
     descriptionCell.textContent = rowData.description;
 
     const statusCell = row.insertCell();
-    statusCell.textContent = rowData.complete;
+    if(rowData.complete)
+    {
+        statusCell.textContent = "Complete";
+    }
+    else
+    {
+        statusCell.textContent = "Ongoing";
+    }
 
     const dateCell = row.insertCell();
     dateCell.textContent = rowData.dateStarted;
@@ -50,9 +55,12 @@ function RenderTable(projects,table)
 }
 
 //Sort table by name
+
+let ascending = true;
+
 sortHeader.addEventListener("click", () =>
 {
-    projects.sort((a, b) =>
+    projectLinks.sort((a, b) =>
     {
         return ascending
             ? a.name.localeCompare(b.name)
@@ -66,7 +74,7 @@ sortHeader.addEventListener("click", () =>
         ? "Project Name ▼"
         : "Project Name ▲";
 
-    RenderTable(projects,table);
+    RenderTable(projectLinks,table);
 });
 
 
