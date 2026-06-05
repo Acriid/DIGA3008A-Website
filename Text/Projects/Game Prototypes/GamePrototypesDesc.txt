@@ -1,0 +1,2 @@
+This project is a (thingy) of prototypes. Each prototype focused on a different hypothesis and where each
+built around that hypothesis.

@@ -12,16 +12,12 @@ body {
     grid-template-areas: 
     "header"
     "hero"
-    "projects"
-    "about"
+    "body"
+    "other-contacts"
     "footer";
 
     background-color: #08001B;
     color: #f7f7f7;
-}
-
-.top-nav {
-    grid-area: header;
 }
 
 .hero {
@@ -33,23 +29,24 @@ body {
     margin-top: 20vh;
 }
 
-.hero h1{
-    color: #f7f7f7;
+/* #region other css grid areas */
+.top-nav {
+    grid-area: header;
 }
-
-.projects h2 {
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
+.contacts {
+    grid-area: footer;
 }
+/* #endregion */
 
-.projects-grid {
-    grid-area: projects;
-    width: 100%;
-    height: 500px;
+.project-body {
+    justify-self: center;
+    grid-area: body;
+    width: 80%;
     display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: minmax(300px, auto);
+    gap: 2rem;
     border: 1px solid white;
-    grid-template-columns: repeat(3,1fr);
     justify-items: center;
     align-items: center;
     margin-bottom: 20vh;
@@ -57,28 +54,18 @@ body {
 }
 
 
-
-
-.aboutme h2{
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
+.project-body p {
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
-.about-grid {
-    width: 100%;
-    height: 600px;
-    border: 1px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1E1B4B;
-    padding: 16px;
+
+
+#paragraph1 {
+    padding: 32px 8px 32px 32px;
 }
 
-#about-text {
-    padding: 32px;
-}
+
 
 
 

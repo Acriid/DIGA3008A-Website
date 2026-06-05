@@ -7,42 +7,42 @@ export const projectLinks = [
   {
     name: "Hidden Lab",
     description: "A game about a slime escaping a lab",
-    longDescriptionRef: "/Text/Projects/Project 1/project1LongDesc.txt",
+    longDescriptionRef: "/Text/Projects/HiddenLab/HiddenLabDesc.txt",
     longDescription: "",
-    href: "/Pages/Projects/project1.html", 
+    href: "/Pages/Projects/HiddenLab.html", 
     imgref: "/Assets/Images/Projects/Temp/FairyFlight.jpg", 
     complete: true,
-    dateStarted: "DD/MM/YY"
+    dateStarted: "14/04/2025"
   },
   {
     name: "Cult Game", 
     description: "A game about a detective investigating a cult",
-    longDescriptionRef: "/Text/Projects/project2.txt",
+    longDescriptionRef: "/Text/Projects/CultGame/CultGameDesc.txt",
     longDescription: "",
-    href: "/Pages/Projects/project2.html", 
+    href: "/Pages/Projects/CultGame.html", 
     imgref: "/Assets/Images/Projects/Temp/fairy.jpg", 
     complete: true,
-    dateStarted: "DD/MM/YY"
+    dateStarted: "14/06/2025"
   },
   {
-    name: "Project 3", 
-    description: "Description 3",
-    longDescriptionRef: "/Text/Projects/project3.txt",
+    name: "Game Prototypes", 
+    description: "Prototypes for games made for a game design course",
+    longDescriptionRef: "/Text/Projects/Game Prototypes/GamePrototypesDesc.txt",
     longDescription: "",
-    href: "/Pages/Projects/project3.html", 
+    href: "/Pages/Projects/GamePrototypes.html", 
     imgref: "/Assets/Images/Projects/Temp/FairyMagic.jpg", 
-    complete: false,
-    dateStarted: "DD/MM/YY"
+    complete: true,
+    dateStarted: "04/02/2026"
   },
   {
     name: "This Website", 
     description: "The website is constantly updating and developing",
-    longDescriptionRef: "/Text/Projects/project4.txt",
+    longDescriptionRef: "/Text/Projects/ThisWebsite/ThisWebsiteDesc.txt",
     longDescription: "",
-    href: "/Pages/Projects/project4.html", 
+    href: "/Pages/Projects/ThisWebsite.html", 
     imgref: "/Assets/Images/Projects/Temp/VoidDevastator.png", 
     complete: false,
-    dateStarted: "DD/MM/YY"
+    dateStarted: "07/04/2026"
   },
 ];
 

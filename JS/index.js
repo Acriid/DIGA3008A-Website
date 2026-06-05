@@ -62,7 +62,7 @@ function SetCard(card,project){
 //Load file
 const aboutParagraph = document.getElementById("about-text");
 
-fetch("/Text/index/aboutme.txt")
+fetch("/Text/HomePage/aboutme.txt")
     .then(response => response.text())
     .then(data => {
         aboutParagraph.textContent = data
