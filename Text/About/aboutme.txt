@@ -1,0 +1,7 @@
+I am Wilrich van Deventer the creator of this website and multiple other projects that can be seen on the project page.
+I have developed this website as a portfolio to show off my coding and designing skills. The website is originally
+for an exam, but I do wish to keep developing this website with more of my projects.
+I am currently a 3rd year student studying BSCeng in Digital Arts at the University of Witwatersrand. I wish to 
+become a game designer or software engineer. 
+I want my code to inspire others to make their own code and I want it to help others with problems that my code could
+solve for then thus I want to show all my project code to all those that want to look at it.

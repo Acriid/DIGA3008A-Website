@@ -10,9 +10,10 @@ export const projectLinks = [
     longDescriptionRef: "/Text/Projects/HiddenLab/HiddenLabDesc.txt",
     longDescription: "",
     href: "/Pages/Projects/HiddenLab.html", 
-    imgref: "/Assets/Images/Projects/Temp/FairyFlight.jpg", 
+    imgref: "/Assets/Images/Projects/HiddenLab/HiddenLabProjectCardImage.png", 
     complete: true,
-    dateStarted: "14/04/2025"
+    dateStarted: "14/04/2025",
+    githubLink: "https://github.com/Acriid/HiddenLabGame"
   },
   {
     name: "Cult Game", 

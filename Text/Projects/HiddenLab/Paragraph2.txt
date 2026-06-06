@@ -1,0 +1,5 @@
+During the initial stages of the game the player finds their player character in a testing room where the player
+will then need to explore around. The player will then learn more about the lab and the different experiments that
+happened there through the environment and different files that are scattered across the floor. The player will
+also find diary entries from a soldier inside the lab. Through both the files and diary entries the player will
+learn more about the experiments in the lab. 

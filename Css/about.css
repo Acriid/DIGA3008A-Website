@@ -25,12 +25,9 @@ body {
     grid-area: header;
 }
 
-
-
-.nav-links a:hover{
-    color: rgb(95, 92, 92);
+.centre-text {
+    justify-self: center;
 }
-
 .hero {
     grid-area: hero;
     display: flex;
@@ -57,10 +54,11 @@ body {
     height: 500px;
     border: 1px solid white;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
     justify-items: center;
     align-items: center;
     margin-bottom: 20vh;
+    background-color: #1E1B4B;
 }
 
 .biography h2{
@@ -76,4 +74,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #1E1B4B;
+}
+
+#biography-text {
+    padding: 32px;
 }

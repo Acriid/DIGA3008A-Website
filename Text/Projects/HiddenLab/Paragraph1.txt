@@ -1,1 +1,5 @@
-The original assignment for this project was to join 
+The original assignment for this project was to make a top down two dimensional game. This was done in groups of
+three and parts of the game were submitted during development where the full game was submitted as an exam.
+Thus my group decided to make a game where the player is an experiment that awakes in an abandoned lab. The player
+will then explore the lab to find out what happened to the lab. The other group members can be seen at the bottom
+of this page.

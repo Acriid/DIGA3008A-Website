@@ -1,0 +1,5 @@
+The game is made using unity where the entire game is coded in c#. For this project I was still inexperienced in
+working with a team so most of the code was done separate from the rest of the team. This caused situations where
+code had to be redone because it did not work with other code. Due to my inexperience most of the code in this project
+follows bad coding practices and are inefficient. In the future I want to revisit the project to just improve it 
+overall.
