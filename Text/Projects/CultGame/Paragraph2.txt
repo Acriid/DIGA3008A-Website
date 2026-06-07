@@ -1,0 +1,5 @@
+When the player loads into the game they will see a cutscene explaining the story to them so far. The player will then
+wake up in an abandoned warehouse where they will need to pick up a ritual book. The ritual book will allow the player
+to see messages hidden to the naked eye while also allowing the player to go where they are not supposed to. During the
+game the player will actually be completing the ritual instead of stopping it due to the influence of the book that
+the player picked up. The player will also find different items that allow them to see that which is not usually seen.

@@ -21,9 +21,10 @@ export const projectLinks = [
     longDescriptionRef: "/Text/Projects/CultGame/CultGameDesc.txt",
     longDescription: "",
     href: "/Pages/Projects/CultGame.html", 
-    imgref: "/Assets/Images/Projects/Temp/fairy.jpg", 
+    imgref: "/Assets/Images/Projects/CultGame/StartingScene.png", 
     complete: true,
-    dateStarted: "14/06/2025"
+    dateStarted: "14/06/2025",
+    githubLink:"https://github.com/Acriid/CultGame"
   },
   {
     name: "Game Prototypes", 

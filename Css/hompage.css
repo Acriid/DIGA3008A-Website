@@ -5,7 +5,7 @@
 }
 
 body {
-    height: 2070px;
+    height: 100vh;
     display: grid;
     grid-template-rows: 50px 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr;

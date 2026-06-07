@@ -5,20 +5,23 @@
 }
 
 body {
-    height: 2070px;
+    height: 100vh;
     display: grid;
-    grid-template-rows: 50px 0.5fr 1fr;
+    grid-template-rows: 0.2fr 0.5fr 1fr 0.3fr;
     grid-template-columns: 1fr;
     grid-template-areas: 
     "header"
     "hero"
-    "table"
+    "project-table"
     "footer";
 
     background-color: #08001B;
     color: #f7f7f7;
 }
 
+.top-nav {
+    grid-area: header;
+}
 
 .hero {
     grid-area: hero;
@@ -35,9 +38,11 @@ body {
 
 
 .projects-table{
-    grid-area: table;
+    grid-area: project-table;
     border: 1px solid white;
-    height: 100%;
+    background-color: #1E1B4B;
+    height: 500px;
+    padding: 16px;
 }
 
 table{
@@ -50,7 +55,11 @@ th,td{
     padding: 10px;
 }
 
-#sort-name:hover{
+.sort-click:hover{
     cursor: pointer;
     color: #c0b8b8;
+}
+
+.contacts {
+    grid-area: footer;
 }

@@ -1,0 +1,5 @@
+Cult game is a 3D game made in unity. The game was originally made for an assignment where a group of 3 people needed
+to make the game over the course of a semester where parts of the game are submitted during the course of development,
+while the entire game was submitted as an exam. Cult game is about a detective investigating the cult in Cult City.
+The detective gets kidnapped by the cult in order for them to summon their god. The player takes control of the detective
+and must try to stop the ritual while trying to escape the cult.

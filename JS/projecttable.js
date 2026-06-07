@@ -1,5 +1,5 @@
 const table = document.getElementById("table");
-const sortHeader = document.getElementById("sort-name");
+
 
 import { projectLinks } from "/JS/projectdata.js";
 
@@ -56,25 +56,64 @@ function RenderTable(projects,table)
 
 //Sort table by name
 
-let ascending = true;
+let ascendingName = true;
 
-sortHeader.addEventListener("click", () =>
-{
-    projectLinks.sort((a, b) =>
-    {
-        return ascending
+const sortHeader = document.getElementById("sort-name");
+
+sortHeader.addEventListener("click", () => {
+    projectLinks.sort((a, b) => {
+        return ascendingName
             ? a.name.localeCompare(b.name)
             : b.name.localeCompare(a.name);
     });
 
-    ascending = !ascending;
+    ascendingName = !ascendingName;
 
 
-    sortHeader.textContent = ascending
+    sortHeader.textContent = ascendingName
         ? "Project Name ▼"
         : "Project Name ▲";
 
     RenderTable(projectLinks,table);
+});
+
+let ascendingDescription = true;
+
+const sortDescription = document.getElementById("sort-description");
+
+sortDescription.addEventListener("click", () => {
+    projectLinks.sort((a,b) => {
+        return ascendingDescription 
+        ? a.description.localeCompare(b.description)
+        : b.description.localeCompare(a.description);
+    });
+
+    ascendingDescription = !ascendingDescription;
+
+    sortDescription.textContent = ascendingDescription
+        ? "Project Description ▼"
+        : "Project Description ▲";
+    RenderTable(projectLinks,table);
+});
+
+let complete = true;
+
+const sortStatus = document.getElementById("sort-status");
+
+sortStatus.addEventListener("click", () => {
+    projectLinks.sort((a, b) => {
+        return complete
+            ? Number(b.complete) - Number(a.complete)
+            : Number(a.complete) - Number(b.complete);
+    });
+
+    complete = !complete;
+
+    sortStatus.textContent = complete
+        ? "Project Status ▼"
+        : "Project Status ▲";
+
+    RenderTable(projectLinks, table);
 });
 
 

@@ -1,0 +1,5 @@
+The game was made in unity using c#. For this game I did all the code which allowed the group to work to their full
+potential, due to the other members of the group being better at art and game assets. The coding for this project
+follows good coding practices, but I did get a sloppy with the code when the deadline was approaching which did not
+cause any problems for the project, but it may cause problems for if anyone wants to continue or revisit the project
+,because they may have to redo the code.

@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="/Css/General/navigation.css">
     <link rel="stylesheet" href="/Css/General/fonts.css">
     <link rel="stylesheet" href="/Css/General/buttons.css">
+    <link rel="stylesheet" href="/Css/General/footer.css">
     <link rel="stylesheet" href="/Css/projecttable.css">
     <script src="/JS/General/navigation.js" defer></script>
+    <script src="/JS/General/footer.js" defer></script>
     <script type="module" src="/JS/projecttable.js"></script>
 </head>
 <body>
@@ -26,19 +28,19 @@
             </form>
         </section>
         <section class="projects-table">
-
             <table id="table">
                 <tbody>
                     <tr>
-                        <th class="body-text" id="sort-name">Project Name</th>
-                        <th class="body-text">Project Description</th>
-                        <th class="body-text">Project Status</th>
-                        <th class="body-text">Project Date</th>
+                        <th class="body-text sort-click" id="sort-name">Project Name</th>
+                        <th class="body-text sort-click" id="sort-description">Project Description</th>
+                        <th class="body-text sort-click" id="sort-status">Project Status</th>
+                        <th class="body-text sort-click" id="sort-date">Project Date</th>
                     </tr>
                 </tbody>
             </table>
         </section>
 
     </main>
+    <div id="contact-container"></div>
 </body>
 </html>
