@@ -32,19 +32,6 @@ body {
     padding: 1rem;
 }
 
-.projects-grid {
-    width: 100%;
-    height: 500px;
-    display: grid;
-    border: 1px solid white;
-    grid-template-columns: repeat(3,1fr);
-    justify-items: center;
-    align-items: center;
-    margin-bottom: 20vh;
-    background-color: #1E1B4B;
-}
-
-
 
 /* About grid */
 .aboutme h2{

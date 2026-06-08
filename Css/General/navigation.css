@@ -9,7 +9,9 @@
 
 .nav-links {
     display: flex;
-    gap: 20vw;
+    justify-content: space-evenly;
+    width: 100%;
 }
+
 
 
