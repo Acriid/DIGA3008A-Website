@@ -101,7 +101,7 @@ function ChangeNumber(number, increase, min, max)
 }
 
 projectTableButton.onclick = function(){
-    window.location.href = "/Pages/projecttable.html";
+    window.location.href = BASE_PATH + "/Pages/projecttable.html";
 };
 
 

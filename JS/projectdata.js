@@ -1,3 +1,4 @@
+import { BASE_PATH } from "./General/config.js";
 //Must keep objects consistent otherwise I need to redo objects in every js file
 
 //description is only for tables
@@ -60,7 +61,7 @@ export async function PreloadProjectDescriptions()
     {
         try
         {
-            const response = await fetch(project.longDescriptionRef);
+            const response = await fetch(BASE_PATH + project.longDescriptionRef);
 
             if (!response.ok)
             {
