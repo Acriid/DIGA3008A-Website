@@ -1,0 +1,5 @@
+The third prototype was about micro design of the moment to moment gameplay which lead to the following hypothesis:
+"How will the change of a horror aesthetic to a greybox aesthetic affect how the player interacts with the game 
+when the game has a horror game enemy AI and other horror elements?" This lead to the main focus of this prototype
+which is the enemy AI. The enemy AI was inspired by the Alien from Alien:Isolation. The hypothesis was better because
+I could prove the hypothesis through how the mechanics and different graphics of the game interact with the player. 

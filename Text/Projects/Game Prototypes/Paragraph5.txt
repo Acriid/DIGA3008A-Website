@@ -1,0 +1,5 @@
+The fourth prototype was about macro design which lead to the following hypothesis: "Will the introduction of a 
+rogue-like level generation complement the horror themes of the game or will it remove the player from the immersion 
+of the game." The main focus of this prototype was the procedural generation algorithm which would create the level
+for the player to play in. It was a basic Binary Space Partitioning algorithm with a key and door placed randomly
+on the map. The enemy AI chased the player on this map.

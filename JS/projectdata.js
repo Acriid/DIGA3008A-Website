@@ -32,9 +32,10 @@ export const projectLinks = [
     longDescriptionRef: "/Text/Projects/Game Prototypes/GamePrototypesDesc.txt",
     longDescription: "",
     href: "/Pages/Projects/GamePrototypes.html", 
-    imgref: "/Assets/Images/Projects/Temp/FairyMagic.jpg", 
+    imgref: "/Assets/Images/Projects/Game Prototypes/ContaminatedRoom.png", 
     complete: true,
-    dateStarted: "04/02/2026"
+    dateStarted: "04/02/2026",
+    githubLink:"https://github.com/Acriid/unity-assignment-projects"
   },
   {
     name: "This Website", 

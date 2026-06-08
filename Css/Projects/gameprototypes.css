@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 50px 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    background-color: #08001B;
+    color: #f7f7f7;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20vh;
+    margin-top: 20vh;
+}
+
+#github-button {
+    justify-self: center;
+    margin-bottom: 2vh;
+}
+
+
+
+
+

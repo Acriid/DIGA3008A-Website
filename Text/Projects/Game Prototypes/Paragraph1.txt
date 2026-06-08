@@ -1,0 +1,4 @@
+The game prototypes are a series of prototypes where each prototype focuses on a different hypothesis. Each prototype
+has a game design document made in latex that can be seen in the github repository under its specific folder.
+These prototypes were each developed in the span of two weeks with the exam prototype being developed over the span
+of a month.

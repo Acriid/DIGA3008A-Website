@@ -1,0 +1,5 @@
+The first prototype was about player motivation which lead to the hypothesis being: "The player will explore other 
+aspects of the game that they have not found if they know there is more to find even when a clear winning goal is 
+shown." This hypothesis lead to the creation of a dialog system similar to the one in Stanley Parable where the
+narrator would try to get the player to follow a specific narrative. The player motivation came from the player
+wanting to replay the game, while following a different path of the game.

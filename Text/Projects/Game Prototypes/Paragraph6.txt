@@ -1,0 +1,7 @@
+The exam prototype was to choose any of the other prototypes and improve them. I decided to improve each prototype
+while mainly focusing on the procedural generation of the fourth prototype. The hypothesis of this prototype was:
+"Will the addition of mechanics that allow the player to traverse the map in different ways
+allow the use of bigger maps or will it cause the player to be frustrated with the map despite
+the extra mechanics to traverse the map." The focus was on improving the procedural generation by adding hidden paths
+between rooms along with teleporters that teleport the player from one room to another. This allowed for the map
+to be bigger while also allowing more ways for the player to run from the enemy AI.

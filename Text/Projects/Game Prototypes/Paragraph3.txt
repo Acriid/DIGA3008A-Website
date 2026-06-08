@@ -1,0 +1,4 @@
+The second prototype was about player communication which lead to the hypothesis: "If important game elements are 
+highlighted then players will recognize that element faster because the information hierarchy directs the players 
+attention." This was not a good hypothesis because it is easily proved. The prototype was the development of the
+tutorial for the game, where it showed the player the mechanics of the game in a linear way.
