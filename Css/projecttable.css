@@ -9,22 +9,11 @@ body {
     display: grid;
     grid-template-rows: 0.2fr 0.5fr 1fr 0.3fr;
     grid-template-columns: 1fr;
-    grid-template-areas: 
-    "header"
-    "hero"
-    "project-table"
-    "footer";
-
     background-color: #08001B;
     color: #f7f7f7;
 }
 
-.top-nav {
-    grid-area: header;
-}
-
 .hero {
-    grid-area: hero;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,7 +27,6 @@ body {
 
 
 .projects-table{
-    grid-area: project-table;
     border: 1px solid white;
     background-color: #1E1B4B;
     height: 500px;
@@ -60,6 +48,6 @@ th,td{
     color: #c0b8b8;
 }
 
-.contacts {
-    grid-area: footer;
+.table-button {
+    text-decoration: underline;
 }

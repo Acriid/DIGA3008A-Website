@@ -9,23 +9,11 @@ body {
     display: grid;
     grid-template-rows: 50px 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr;
-    grid-template-areas: 
-    "header"
-    "hero"
-    "projects"
-    "about"
-    "footer";
-
     background-color: #08001B;
     color: #f7f7f7;
 }
 
-.top-nav {
-    grid-area: header;
-}
-
 .hero {
-    grid-area: hero;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,7 +32,6 @@ body {
 }
 
 .projects-grid {
-    grid-area: projects;
     width: 100%;
     height: 500px;
     display: grid;

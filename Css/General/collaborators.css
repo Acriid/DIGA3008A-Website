@@ -1,0 +1,17 @@
+.collaborators {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.collaborator-card {
+    width: 400px;
+    height: 200px;
+    background-color: #1E1B4B;
+    border: 1px solid white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

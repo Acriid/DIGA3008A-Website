@@ -9,19 +9,11 @@ body {
     display: grid;
     grid-template-rows: 50px 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr;
-    grid-template-areas: 
-    "header"
-    "hero"
-    "body"
-    "other-contacts"
-    "footer";
-
     background-color: #08001B;
     color: #f7f7f7;
 }
 
 .hero {
-    grid-area: hero;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,69 +21,12 @@ body {
     margin-top: 20vh;
 }
 
-/* #region other css grid areas */
-.top-nav {
-    grid-area: header;
-}
-.contacts {
-    grid-area: footer;
-}
-.button {
-    grid-area: body;
-}
-/* #endregion */
-
-.project-body {
-    justify-self: center;
-    grid-area: body;
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-auto-rows: minmax(300px, auto);
-    gap: 2rem;
-    border: 1px solid white;
-    justify-items: center;
-    align-items: center;
-    margin-bottom: 10vh;
-    background-color: #1E1B4B;
-}
-
-
-.project-body p {
-    overflow-wrap: break-word;
-    word-break: break-word;
-    padding: 32px;
-}
-
-.project-card {
-    width: 100%;
-    background-color: #08001B;
-    position: relative;
-    padding: 8px;
-}
-
 #github-button {
     justify-self: center;
+    margin-bottom: 2vh;
 }
 
 
-
-
-.collaborator-card {
-    width: 400px;
-    height: 200px;
-    background-color: #1E1B4B;
-    border: 1px solid white;
-}
-
-.collaborator-card h3{
-    justify-self: center;
-}
-
-.collaborator-card a{
-    justify-self: center;
-    align-self: center;
-}
 
 
 

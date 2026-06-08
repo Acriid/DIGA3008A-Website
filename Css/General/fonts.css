@@ -96,3 +96,9 @@
         font-family: "Inter", sans-serif;
     }
 }
+
+
+.centered-text {
+    justify-self: center;
+    margin-bottom: 4vh;
+}

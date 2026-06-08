@@ -1,26 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 50px 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
-    background-color: #08001B;
-    color: #f7f7f7;
-}
-
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20vh;
-    margin-top: 20vh;
-}
-
 @media (min-width: 1000px)
 {
     .project-body {
@@ -56,18 +33,10 @@ body {
 
 }
 
-
 .project-body p {
     overflow-wrap: break-word;
     word-break: break-word;
     padding: 32px;
-}
-
-.project-card {
-    width: 100%;
-    background-color: #08001B;
-    position: relative;
-    padding: 8px;
 }
 
 .project-image {
@@ -79,9 +48,4 @@ body {
     height: 100%;
     object-fit: cover;
     display: block;
-}
-
-#github-button {
-    justify-self: center;
-    margin-bottom: 2vh;
 }

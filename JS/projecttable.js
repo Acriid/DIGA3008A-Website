@@ -12,9 +12,13 @@ function MakeTableEntry(rowData,table){
     // Project Name cell
     const nameCell = row.insertCell();
 
-    const link = document.createElement("a");
-    link.href = rowData.href;
+    const link = document.createElement("button");
+    link.onclick = function(){
+        window.location.href = rowData.href;
+    };
     link.textContent = rowData.name;
+    link.classList.add("button");
+    link.classList.add("table-button");
 
     nameCell.appendChild(link);
 
