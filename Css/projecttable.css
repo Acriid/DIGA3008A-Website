@@ -30,7 +30,8 @@ body {
 .projects-table{
     border: 1px solid white;
     background-color: #1E1B4B;
-    height: 500px;
+    min-height: 500px;
+    height: auto;
     padding: 16px;
 }
 
