@@ -13,6 +13,7 @@ body {
     color: #f7f7f7;
 }
 
+/* Hero */
 .hero {
     display: flex;
     align-items: center;
@@ -25,7 +26,7 @@ body {
     color: #f7f7f7;
 }
 
-
+/* Table */
 .projects-table{
     border: 1px solid white;
     background-color: #1E1B4B;
@@ -50,4 +51,18 @@ th,td{
 
 .table-button {
     text-decoration: underline;
+}
+
+/* Search */
+.tableSearch form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#table-search {
+    width: 300px;
+    padding: 0.5rem;
+    margin-bottom: 1vh;
 }

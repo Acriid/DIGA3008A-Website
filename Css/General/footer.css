@@ -6,22 +6,21 @@
     gap: 60px;
 }
 
-/* Unvisited link */
+
 a:link {
     color: #f7f7f7;
 }
 
-/* Visited link */
+
 a:visited {
     color: #f7f7f7;
 }
 
-/* Mouse over link */
+
 a:hover {
     color: rgb(95, 92, 92);
 }
 
-/* Selected link */
 a:active {
     color: #f7f7f7;
 }

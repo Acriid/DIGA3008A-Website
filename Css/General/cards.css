@@ -1,3 +1,4 @@
+/* Grid css */
 .card-grid {
     width: 100%;
     height: 500px;
@@ -8,6 +9,7 @@
     align-items: center;
     margin-bottom: 20vh;
 }
+/* Image css */
 .project-img {
     width: 100%;
     height: 100%;
@@ -16,6 +18,7 @@
     display: block;             
 }
 
+/* Project cards */
 .project-card {
     width: 400px;
     aspect-ratio: 3/2.5;
@@ -29,7 +32,7 @@
     cursor: pointer;
 }
 
-
+/* Project information */
 .project-description {
     position: absolute;
     bottom: 0;

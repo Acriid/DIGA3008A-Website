@@ -46,7 +46,7 @@ function ChooseContentOrder(boolValue)
 
 
 
-
+//Change content order to match device size
 const bodyContainer = document.getElementById("project-body");
 
 const mediaQuery = window.matchMedia("(max-width: 1000px)");

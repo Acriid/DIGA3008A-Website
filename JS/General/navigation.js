@@ -1,5 +1,6 @@
 const page = window.location.pathname;
 
+// Update links if needed
 const navLinks = [
     { id: "navButton1", label: "About",    href: "/Pages/about.html"    },
     { id: "navButton2", label: "Home",     href: "/index.html"          },

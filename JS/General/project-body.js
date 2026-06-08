@@ -17,7 +17,7 @@ export async function RenderProjectBody(parent, content)
     }
 }
 
-
+//Scripts can just take the AddParagraph or AddImage function if needed
 export async function AddParagraphSection(parent, textFile)
 {
     const container = document.createElement("div");

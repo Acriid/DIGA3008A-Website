@@ -12,7 +12,7 @@ body {
     background-color: #08001B;
     color: #f7f7f7;
 }
-
+/* Hero */
 .hero {
     display: flex;
     flex-direction: column;
@@ -29,7 +29,7 @@ body {
     margin-top: 4rem;
 }
 
-
+/* Grids header */
 .current h2 {
     display: flex;
     justify-content: center;

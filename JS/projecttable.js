@@ -36,8 +36,14 @@ function MakeTableEntry(rowData,table){
         statusCell.textContent = "Ongoing";
     }
 
+    //Add time tag for better accessibility
     const dateCell = row.insertCell();
-    dateCell.textContent = rowData.dateStarted;
+
+    const timeElement = document.createElement("time");
+    timeElement.dateTime = rowData.dateStarted;
+    timeElement.textContent = rowData.dateStarted;
+
+    dateCell.appendChild(timeElement);
 
     [descriptionCell, statusCell, dateCell].forEach(cell => {
         cell.classList.add("body-text-small");
@@ -81,6 +87,8 @@ sortHeader.addEventListener("click", () => {
     RenderTable(projectLinks,table);
 });
 
+
+//Sort table by description
 let ascendingDescription = true;
 
 const sortDescription = document.getElementById("sort-description");
@@ -100,6 +108,7 @@ sortDescription.addEventListener("click", () => {
     RenderTable(projectLinks,table);
 });
 
+//Sort table by status
 let complete = true;
 
 const sortStatus = document.getElementById("sort-status");
@@ -121,4 +130,48 @@ sortStatus.addEventListener("click", () => {
 });
 
 
+//Sort table by date
+let dateSorted = true;
+
+const sortDate = document.getElementById("sort-date");
+
+sortDate.addEventListener("click", () => {
+    projectLinks.sort((a, b) => {
+        return dateSorted
+            ? new Date(a.dateStarted) - new Date(b.dateStarted)
+            : new Date(b.dateStarted) - new Date(a.dateStarted);
+    });
+
+    dateSorted = !dateSorted;
+
+    sortDate.textContent = dateSorted
+        ? "Project Date ▼"
+        : "Project Date ▲";
+
+    RenderTable(projectLinks, table);
+});
+
+
 RenderTable(projectLinks,table);
+
+
+const searchInput = document.getElementById("table-search");
+//Checks if search input is in any part of the project and displays that project
+searchInput.addEventListener("input", () => {
+    const searchTerm = searchInput.value.toLowerCase().trim();
+
+    const filteredProjects = projectLinks.filter(project => {
+        const searchableText = [
+            project.name,
+            project.description,
+            project.dateStarted,
+            project.complete ? "Complete" : "Ongoing"
+        ]
+        .join(" ")
+        .toLowerCase();
+
+        return searchableText.includes(searchTerm);
+    });
+
+    RenderTable(filteredProjects, table);
+});

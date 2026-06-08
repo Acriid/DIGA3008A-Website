@@ -1,16 +1,20 @@
 export function InitializeCollaborators(collaborators)
 {
+
     const container =
         document.getElementById("collaborator-container");
 
+    //Sets html
     container.innerHTML = `
         <h2 class="centered-text">Collaborators</h2>
         <div class="collaborators"></div>
     `;
 
+    //Gets html just set
     const collaboratorsDiv =
         container.querySelector(".collaborators");
 
+    //Adds new cards for each collaborator for the project
     collaborators.forEach(collaborator =>
     {
         const card = document.createElement("div");

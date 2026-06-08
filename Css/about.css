@@ -16,6 +16,8 @@ body {
 .centre-text {
     justify-self: center;
 }
+
+/* Hero */
 .hero {
     grid-area: hero;
     display: flex;
@@ -29,7 +31,7 @@ body {
     color: #f7f7f7;
 }
 
-
+/* Skill display */
 .skills h2 {
     display: flex;
     justify-content: center;
@@ -48,6 +50,7 @@ body {
     background-color: #1E1B4B;
 }
 
+/* Biography */
 .biography h2{
     display: flex;
     justify-content: center;

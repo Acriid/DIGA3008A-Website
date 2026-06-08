@@ -12,7 +12,7 @@ body {
     background-color: #08001B;
     color: #f7f7f7;
 }
-
+/* Hero */
 .hero {
     display: flex;
     align-items: center;
@@ -25,6 +25,7 @@ body {
     color: #f7f7f7;
 }
 
+/* Projects Grid */
 .projects h2 {
     display: flex;
     justify-content: center;
@@ -45,7 +46,7 @@ body {
 
 
 
-
+/* About grid */
 .aboutme h2{
     display: flex;
     justify-content: center;

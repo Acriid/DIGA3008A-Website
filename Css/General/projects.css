@@ -1,3 +1,4 @@
+/* Desktop body */
 @media (min-width: 1000px)
 {
     .project-body {
@@ -16,6 +17,7 @@
 
 
 }
+/* Mobile body changes to one column */
 @media (max-width: 1000px)
 {
     .project-body {

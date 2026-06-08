@@ -1,3 +1,4 @@
+/* Import Fonts */
 @font-face {
     font-family: "Inter";
     src: url(/fonts/Inter-VariableFont_opsz,wght.ttf) format("truetype");
@@ -10,6 +11,7 @@
     font-weight: 400 900;
 }
 
+/* Mobile */
 @media (min-width: 700px)
 {
     h1 {
@@ -53,7 +55,7 @@
     }
 
 }
-
+/* Desktop */
 @media (max-width: 700px)
 {
     h1 {

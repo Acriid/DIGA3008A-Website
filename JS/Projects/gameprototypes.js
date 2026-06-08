@@ -1,3 +1,4 @@
+//Imports
 import { projectLinks } from "/JS/projectdata.js";
 import { RenderProjectBody } from "/JS/General/project-body.js";
 import { InitializeCollaborators } from "/JS/General/collaborators.js";
@@ -71,7 +72,7 @@ function ChooseContentOrder(boolValue)
 
 
 
-
+//Change content order to match device size
 const bodyContainer = document.getElementById("project-body");
 
 const mediaQuery = window.matchMedia("(max-width: 1000px)");

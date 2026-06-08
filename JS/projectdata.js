@@ -10,9 +10,10 @@ export const projectLinks = [
     longDescriptionRef: "/Text/Projects/HiddenLab/HiddenLabDesc.txt",
     longDescription: "",
     href: "/Pages/Projects/HiddenLab.html", 
-    imgref: "/Assets/Images/Projects/HiddenLab/HiddenLabProjectCardImage.png", 
+    imgref: "/Assets/Images/Projects/HiddenLab/HiddenLabProjectCardImage.png",
+    alt: "A test tube used in the game HiddenLab", 
     complete: true,
-    dateStarted: "14/04/2025",
+    dateStarted: "2025-04-14",
     githubLink: "https://github.com/Acriid/HiddenLabGame"
   },
   {
@@ -21,9 +22,10 @@ export const projectLinks = [
     longDescriptionRef: "/Text/Projects/CultGame/CultGameDesc.txt",
     longDescription: "",
     href: "/Pages/Projects/CultGame.html", 
-    imgref: "/Assets/Images/Projects/CultGame/StartingScene.png", 
+    imgref: "/Assets/Images/Projects/CultGame/StartingScene.png",
+    alt: "The starting scene of Cult Game",  
     complete: true,
-    dateStarted: "14/06/2025",
+    dateStarted: "2025-06-14",
     githubLink:"https://github.com/Acriid/CultGame"
   },
   {
@@ -33,8 +35,9 @@ export const projectLinks = [
     longDescription: "",
     href: "/Pages/Projects/GamePrototypes.html", 
     imgref: "/Assets/Images/Projects/Game Prototypes/ContaminatedRoom.png", 
+    alt: "A contaminated room from Game Prototypes", 
     complete: true,
-    dateStarted: "04/02/2026",
+    dateStarted: "2026-02-04",
     githubLink:"https://github.com/Acriid/unity-assignment-projects"
   },
   {
@@ -43,9 +46,11 @@ export const projectLinks = [
     longDescriptionRef: "/Text/Projects/ThisWebsite/ThisWebsiteDesc.txt",
     longDescription: "",
     href: "/Pages/Projects/ThisWebsite.html", 
-    imgref: "/Assets/Images/Projects/Temp/VoidDevastator.png", 
+    imgref: "/Assets/Images/Projects/This Website/Title.png",
+    alt: "The title This Website", 
     complete: false,
-    dateStarted: "07/04/2026"
+    dateStarted: "2026-04-07",
+    githubLink:"https://github.com/Acriid/DIGA3008A-Website"
   },
 ];
 
@@ -59,7 +64,7 @@ export async function PreloadProjectDescriptions()
 
             if (!response.ok)
             {
-                throw new Error("Could not load description");
+              throw new Error("Could not load description");
             }
 
             project.longDescription = await response.text();

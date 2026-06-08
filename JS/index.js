@@ -22,7 +22,7 @@ function SetProjects(){
     let projectLinksCopy = structuredClone(projectLinks);
 
    
-   
+    
     let randomProject = PickRandomProject(projectLinksCopy);
     projectLinksCopy = projectLinksCopy.filter(project => project.name !== randomProject.name);
 
@@ -47,7 +47,7 @@ function SetCard(card,project){
 
 
     card.innerHTML = `
-        <img src="${project.imgref}" class="project-img">
+        <img src="${project.imgref}" class="project-img" alt = "${project.alt}">
 
         <div class="project-title body-text-small">
             ${project.name}
