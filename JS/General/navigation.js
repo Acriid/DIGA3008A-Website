@@ -1,10 +1,12 @@
+import { BASE_PATH } from "./config.js";
+
 const page = window.location.pathname;
 
 // Update links if needed
 const navLinks = [
-    { id: "navButton1", label: "About",    href: "/Pages/about.html"    },
-    { id: "navButton2", label: "Home",     href: "/index.html"          },
-    { id: "navButton3", label: "Projects", href: "/Pages/projects.html" },
+    { id: "navButton1", label: "About",    href: BASE_PATH + "/Pages/about.html"    },
+    { id: "navButton2", label: "Home",     href: BASE_PATH + "/index.html"          },
+    { id: "navButton3", label: "Projects", href: BASE_PATH + "/Pages/projects.html" },
 ];
 
 
@@ -12,7 +14,7 @@ async function InitializeNavigation()
 {
     const navContainer = document.getElementById("navigation-container");
 
-    const response = await fetch("/General-HTML/navigation.html");
+    const response = await fetch(BASE_PATH + "/General-HTML/navigation.html");
     navContainer.innerHTML = await response.text();
 
     navLinks.forEach(({ id, label, href }) =>

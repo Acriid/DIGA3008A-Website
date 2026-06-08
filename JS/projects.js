@@ -1,3 +1,7 @@
+import { BASE_PATH } from "./General/config.js";
+import { projectLinks } from "./projectdata.js";
+import { PreloadProjectDescriptions } from "./projectdata.js";
+
 //#region Setup
 //Current Cards
 const currentCard1 = document.getElementById("current-card1");
@@ -30,8 +34,6 @@ const rightCurrentButton = document.getElementById("right-button-current");
 const projectTableButton = document.getElementById("project-button");
 
 //ProjectData
-import { projectLinks } from "/JS/projectdata.js";
-import { PreloadProjectDescriptions } from "/JS/projectdata.js";
 
 const currentProjects = projectLinks.filter(project => project.complete === false);
 const completeProjects = projectLinks.filter(project => project.complete === true);
@@ -46,12 +48,12 @@ function PickRandomIndexFromList(projectList){
 //Set single card
 function SetCards(project,card){
     card.onclick = function(){
-        window.location.href = project.href;
+        window.location.href = BASE_PATH + project.href;
     };
 
 
     card.innerHTML = `
-        <img src="${project.imgref}" class="project-img">
+        <img src="${BASE_PATH}${project.imgref}" class="project-img">
 
         <div class="project-title body-text-small">
             ${project.name}

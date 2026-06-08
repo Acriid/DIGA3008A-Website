@@ -1,7 +1,8 @@
 //Imports
-import { projectLinks } from "/JS/projectdata.js";
-import { RenderProjectBody } from "/JS/General/project-body.js";
-import { InitializeCollaborators } from "/JS/General/collaborators.js";
+import { BASE_PATH } from "../General/config.js";
+import { projectLinks } from "../projectdata.js";
+import { RenderProjectBody } from "../General/project-body.js";
+import { InitializeCollaborators } from "../General/collaborators.js";
 
 //Initialize Button
 const cultGame = projectLinks.find(project => project.name === "Cult Game");
@@ -21,24 +22,24 @@ function ChooseContentOrder(boolValue)
     if(boolValue)
     {
         returnContent = [
-            {type: "paragraph", src:"/Text/Projects/CultGame/Paragraph1.txt"},
-            {type: "image", src:"/Assets/Images/Projects/CultGame/PauseScreen.png", alt: "Pause Screen of Cult Game"},
-            {type: "paragraph", src:"/Text/Projects/CultGame/Paragraph2.txt"},
-            {type: "image", src:"/Assets/Images/Projects/CultGame/CultBook.png", alt: "Starting point of the game"},
-            {type: "paragraph", src:"/Text/Projects/CultGame/Paragraph3.txt"},
-            {type: "image", src:"/Assets/Images/Projects/CultGame/CultRitual.png", alt: "Ritual from the game"},
+            {type: "paragraph", src: BASE_PATH + "/Text/Projects/CultGame/Paragraph1.txt"},
+            {type: "image", src: BASE_PATH + "/Assets/Images/Projects/CultGame/PauseScreen.png", alt: "Pause Screen of Cult Game"},
+            {type: "paragraph", src: BASE_PATH + "/Text/Projects/CultGame/Paragraph2.txt"},
+            {type: "image", src: BASE_PATH + "/Assets/Images/Projects/CultGame/CultBook.png", alt: "Starting point of the game"},
+            {type: "paragraph", src: BASE_PATH + "/Text/Projects/CultGame/Paragraph3.txt"},
+            {type: "image", src: BASE_PATH + "/Assets/Images/Projects/CultGame/CultRitual.png", alt: "Ritual from the game"},
         ];
         
     }
     else
     {
         returnContent = [
-            {type: "paragraph", src:"/Text/Projects/CultGame/Paragraph1.txt"},
-            {type: "image", src:"/Assets/Images/Projects/CultGame/PauseScreen.png", alt: "Pause Screen of Cult Game"},
-            {type: "image", src:"/Assets/Images/Projects/CultGame/CultBook.png", alt: "Starting point of the game"},
-            {type: "paragraph", src:"/Text/Projects/CultGame/Paragraph2.txt"},
-            {type: "paragraph", src:"/Text/Projects/CultGame/Paragraph3.txt"},
-            {type: "image", src:"/Assets/Images/Projects/CultGame/CultRitual.png", alt: "Ritual from the game"},
+            {type: "paragraph", src: BASE_PATH + "/Text/Projects/CultGame/Paragraph1.txt"},
+            {type: "image", src: BASE_PATH + "/Assets/Images/Projects/CultGame/PauseScreen.png", alt: "Pause Screen of Cult Game"},
+            {type: "image", src: BASE_PATH + "/Assets/Images/Projects/CultGame/CultBook.png", alt: "Starting point of the game"},
+            {type: "paragraph", src: BASE_PATH + "/Text/Projects/CultGame/Paragraph2.txt"},
+            {type: "paragraph", src: BASE_PATH + "/Text/Projects/CultGame/Paragraph3.txt"},
+            {type: "image", src: BASE_PATH + "/Assets/Images/Projects/CultGame/CultRitual.png", alt: "Ritual from the game"},
         ];       
     }
 

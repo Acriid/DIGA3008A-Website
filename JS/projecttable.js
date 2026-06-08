@@ -1,7 +1,7 @@
+import { BASE_PATH } from "./General/config.js";
+import { projectLinks } from "./projectdata.js";
+
 const table = document.getElementById("table");
-
-
-import { projectLinks } from "/JS/projectdata.js";
 
 
 
@@ -14,7 +14,7 @@ function MakeTableEntry(rowData,table){
 
     const link = document.createElement("button");
     link.onclick = function(){
-        window.location.href = rowData.href;
+        window.location.href = BASE_PATH + rowData.href;
     };
     link.textContent = rowData.name;
     link.classList.add("button");

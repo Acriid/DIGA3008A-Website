@@ -1,6 +1,7 @@
-import { projectLinks } from "/JS/projectdata.js";
-import { RenderProjectBody } from "/JS/General/project-body.js";
-import { InitializeCollaborators } from "/JS/General/collaborators.js";
+import { BASE_PATH } from "../General/config.js";
+import { projectLinks } from "../projectdata.js";
+import { RenderProjectBody } from "../General/project-body.js";
+import { InitializeCollaborators } from "../General/collaborators.js";
 
 
 const thisWebsite = projectLinks.find(project => project.name === "This Website");
@@ -15,7 +16,7 @@ githubButton.onclick = function(){
 const bodyContainer = document.getElementById("project-body");
 
 const content = [
-    {type: "paragraph", src:"/Text/Projects/ThisWebsite/Explanation.txt"},
+    {type: "paragraph", src: BASE_PATH + "/Text/Projects/ThisWebsite/Explanation.txt"},
 ];
 
 RenderProjectBody(bodyContainer, content);

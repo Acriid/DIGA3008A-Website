@@ -1,9 +1,10 @@
+import { BASE_PATH } from "./General/config.js";
+import { projectLinks } from "./projectdata.js";
+import { PreloadProjectDescriptions } from "./projectdata.js";
+
 const projectCard1 = document.getElementById("projectCard1");
 const projectCard2 = document.getElementById("projectCard2");
 const projectCard3 = document.getElementById("projectCard3");
-
-import { projectLinks } from "/JS/projectdata.js";
-import { PreloadProjectDescriptions } from "/JS/projectdata.js";
 
 async function InitializePage()
 {
@@ -42,12 +43,12 @@ function SetProjects(){
 
 function SetCard(card,project){
     card.onclick = function(){
-        window.location.href = project.href;
+        window.location.href = BASE_PATH + project.href;
     };
 
 
     card.innerHTML = `
-        <img src="${project.imgref}" class="project-img" alt = "${project.alt}">
+        <img src="${BASE_PATH}${project.imgref}" class="project-img" alt = "${project.alt}">
 
         <div class="project-title body-text-small">
             ${project.name}
@@ -62,7 +63,7 @@ function SetCard(card,project){
 //Load file
 const aboutParagraph = document.getElementById("about-text");
 
-fetch("/Text/HomePage/aboutme.txt")
+fetch(BASE_PATH + "/Text/HomePage/aboutme.txt")
     .then(response => response.text())
     .then(data => {
         aboutParagraph.textContent = data

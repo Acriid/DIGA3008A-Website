@@ -17,6 +17,8 @@ export async function RenderProjectBody(parent, content)
     }
 }
 
+import { BASE_PATH } from "./config.js";
+
 //Scripts can just take the AddParagraph or AddImage function if needed
 export async function AddParagraphSection(parent, textFile)
 {
@@ -25,7 +27,7 @@ export async function AddParagraphSection(parent, textFile)
 
     const paragraph = document.createElement("p");
 
-    const response = await fetch(textFile);
+    const response = await fetch(BASE_PATH + textFile);
     paragraph.textContent = await response.text();
 
     container.appendChild(paragraph);
@@ -38,7 +40,7 @@ export function AddImageSection(parent, imageFile, altText)
     container.classList.add("project-image");
 
     const image = document.createElement("img");
-    image.src = imageFile;
+    image.src = BASE_PATH + imageFile;
     image.alt = altText;
     image.loading = "lazy";
 

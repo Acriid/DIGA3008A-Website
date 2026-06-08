@@ -1,7 +1,8 @@
 //Imports
-import { projectLinks } from "/JS/projectdata.js";
-import { RenderProjectBody } from "/JS/General/project-body.js";
-import { InitializeCollaborators } from "/JS/General/collaborators.js";
+import { BASE_PATH } from "../General/config.js";
+import { projectLinks } from "../projectdata.js";
+import { RenderProjectBody } from "../General/project-body.js";
+import { InitializeCollaborators } from "../General/collaborators.js";
 
 
 const gamePrototypes = projectLinks.find(project => project.name === "Game Prototypes");
@@ -21,23 +22,23 @@ function ChooseContentOrder(boolValue)
     if(boolValue)
     {
         returnContent = [
-            {type: "paragraph", src:"/Text/Projects/Game Prototypes/Paragraph1.txt"},
-            {type: "image", src:"/Assets/Images/Projects/Game Prototypes/ExamMainMenu.png", 
+            {type: "paragraph", src: BASE_PATH + "/Text/Projects/Game Prototypes/Paragraph1.txt"},
+            {type: "image", src: BASE_PATH + "/Assets/Images/Projects/Game Prototypes/ExamMainMenu.png", 
                 alt: "The main menu for the exam prototype"},
-            {type: "paragraph", src:"/Text/Projects/Game Prototypes/Paragraph2.txt"},
-            {type: "image", src:"/Assets/Images/Projects/Game Prototypes/OriginalPrototype1Map.png", 
+            {type: "paragraph", src: BASE_PATH + "/Text/Projects/Game Prototypes/Paragraph2.txt"},
+            {type: "image", src: BASE_PATH + "/Assets/Images/Projects/Game Prototypes/OriginalPrototype1Map.png", 
                 alt: "Map of the original first prototype"},
-            {type: "paragraph", src:"/Text/Projects/Game Prototypes/Paragraph3.txt"},
-            {type: "image", src:"/Assets/Images/Projects/Game Prototypes/OriginalTutorialMap.png", 
+            {type: "paragraph", src: BASE_PATH + "/Text/Projects/Game Prototypes/Paragraph3.txt"},
+            {type: "image", src: BASE_PATH + "/Assets/Images/Projects/Game Prototypes/OriginalTutorialMap.png", 
                 alt: "Map of the original prototype two tutorial"},
-            {type: "paragraph", src:"/Text/Projects/Game Prototypes/Paragraph4.txt"},
-            {type: "image", src:"/Assets/Images/Projects/Game Prototypes/EnemyMap.png",
+            {type: "paragraph", src: BASE_PATH + "/Text/Projects/Game Prototypes/Paragraph4.txt"},
+            {type: "image", src: BASE_PATH + "/Assets/Images/Projects/Game Prototypes/EnemyMap.png",
                 alt: "A map of the level made to show off the enemy AI"},
-            {type: "paragraph", src:"/Text/Projects/Game Prototypes/Paragraph5.txt"},
-            {type: "image", src:"/Assets/Images/Projects/Game Prototypes/BinarySpacePartitioningMap.png",
+            {type: "paragraph", src: BASE_PATH + "/Text/Projects/Game Prototypes/Paragraph5.txt"},
+            {type: "image", src: BASE_PATH + "/Assets/Images/Projects/Game Prototypes/BinarySpacePartitioningMap.png",
                 alt: "A map made by the binary space partitioning algorithm"},
-            {type: "paragraph", src:"/Text/Projects/Game Prototypes/Paragraph6.txt"},
-            {type: "image", src:"/Assets/Images/Projects/Game Prototypes/ProcedurallyGeneratedMap.png",
+            {type: "paragraph", src: BASE_PATH + "/Text/Projects/Game Prototypes/Paragraph6.txt"},
+            {type: "image", src: BASE_PATH + "/Assets/Images/Projects/Game Prototypes/ProcedurallyGeneratedMap.png",
                 alt: "A procedurally generated map"},
         ];
         
@@ -45,24 +46,24 @@ function ChooseContentOrder(boolValue)
     else
     { 
         returnContent = [
-            {type: "paragraph", src:"/Text/Projects/Game Prototypes/Paragraph1.txt"},
-            {type: "image", src:"/Assets/Images/Projects/Game Prototypes/ExamMainMenu.png", 
+            {type: "paragraph", src: BASE_PATH + "/Text/Projects/Game Prototypes/Paragraph1.txt"},
+            {type: "image", src: BASE_PATH + "/Assets/Images/Projects/Game Prototypes/ExamMainMenu.png", 
                 alt: "The main menu for the exam prototype"},
-            {type: "image", src:"/Assets/Images/Projects/Game Prototypes/OriginalPrototype1Map.png", 
+            {type: "image", src: BASE_PATH + "/Assets/Images/Projects/Game Prototypes/OriginalPrototype1Map.png", 
                 alt: "Map of the original first prototype"},
-            {type: "paragraph", src:"/Text/Projects/Game Prototypes/Paragraph2.txt"},
-            {type: "paragraph", src:"/Text/Projects/Game Prototypes/Paragraph3.txt"},
-            {type: "image", src:"/Assets/Images/Projects/Game Prototypes/OriginalTutorialMap.png", 
+            {type: "paragraph", src: BASE_PATH + "/Text/Projects/Game Prototypes/Paragraph2.txt"},
+            {type: "paragraph", src: BASE_PATH + "/Text/Projects/Game Prototypes/Paragraph3.txt"},
+            {type: "image", src: BASE_PATH + "/Assets/Images/Projects/Game Prototypes/OriginalTutorialMap.png", 
                 alt: "Map of the original prototype two tutorial"},
-            {type: "image", src:"/Assets/Images/Projects/Game Prototypes/EnemyMap.png",
+            {type: "image", src: BASE_PATH + "/Assets/Images/Projects/Game Prototypes/EnemyMap.png",
                 alt: "A map of the level made to show off the enemy AI"},
-            {type: "paragraph", src:"/Text/Projects/Game Prototypes/Paragraph4.txt"},
-            {type: "paragraph", src:"/Text/Projects/Game Prototypes/Paragraph5.txt"},
-            {type: "image", src:"/Assets/Images/Projects/Game Prototypes/BinarySpacePartitioningMap.png",
+            {type: "paragraph", src: BASE_PATH + "/Text/Projects/Game Prototypes/Paragraph4.txt"},
+            {type: "paragraph", src: BASE_PATH + "/Text/Projects/Game Prototypes/Paragraph5.txt"},
+            {type: "image", src: BASE_PATH + "/Assets/Images/Projects/Game Prototypes/BinarySpacePartitioningMap.png",
                 alt: "A map made by the binary space partitioning algorithm"},
-            {type: "image", src:"/Assets/Images/Projects/Game Prototypes/ProcedurallyGeneratedMap.png",
+            {type: "image", src: BASE_PATH + "/Assets/Images/Projects/Game Prototypes/ProcedurallyGeneratedMap.png",
                 alt: "A procedurally generated map"},
-            {type: "paragraph", src:"/Text/Projects/Game Prototypes/Paragraph6.txt"},
+            {type: "paragraph", src: BASE_PATH + "/Text/Projects/Game Prototypes/Paragraph6.txt"},
 
         ];    
     }
