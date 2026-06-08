@@ -16,7 +16,7 @@ githubButton.onclick = function(){
 const bodyContainer = document.getElementById("project-body");
 
 const content = [
-    {type: "paragraph", src: BASE_PATH + "/Text/Projects/ThisWebsite/Explanation.txt"},
+    {type: "paragraph", src:"/Text/Projects/ThisWebsite/Explanation.txt"},
 ];
 
 RenderProjectBody(bodyContainer, content);

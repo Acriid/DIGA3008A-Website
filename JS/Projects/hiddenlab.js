@@ -21,24 +21,24 @@ function ChooseContentOrder(boolValue)
     if(boolValue)
     {
         returnContent = [
-            {type: "paragraph", src: BASE_PATH + "/Text/Projects/HiddenLab/Paragraph1.txt"},
-            {type: "image", src: BASE_PATH + "/Assets/Images/Projects/HiddenLab/MainMenu.png", alt: "Main menu of HiddenLab"},
-            {type: "paragraph", src: BASE_PATH + "/Text/Projects/HiddenLab/Paragraph2.txt"},
-            {type: "image", src: BASE_PATH + "/Assets/Images/Projects/HiddenLab/StartingPoint.png", alt: "Starting point of the game"},
-            {type: "paragraph", src: BASE_PATH + "/Text/Projects/HiddenLab/Paragraph3.txt"},
-            {type: "image", src: BASE_PATH + "/Assets/Images/Projects/HiddenLab/Reactor.png", alt: "Reactor from the game"},
+            {type: "paragraph", src:"/Text/Projects/HiddenLab/Paragraph1.txt"},
+            {type: "image", src:"/Assets/Images/Projects/HiddenLab/MainMenu.png", alt: "Main menu of HiddenLab"},
+            {type: "paragraph", src:"/Text/Projects/HiddenLab/Paragraph2.txt"},
+            {type: "image", src:"/Assets/Images/Projects/HiddenLab/StartingPoint.png", alt: "Starting point of the game"},
+            {type: "paragraph", src:"/Text/Projects/HiddenLab/Paragraph3.txt"},
+            {type: "image", src:"/Assets/Images/Projects/HiddenLab/Reactor.png", alt: "Reactor from the game"},
         ];
         
     }
     else
     {
         returnContent = [
-            {type: "paragraph", src: BASE_PATH + "/Text/Projects/HiddenLab/Paragraph1.txt"},
-            {type: "image", src: BASE_PATH + "/Assets/Images/Projects/HiddenLab/MainMenu.png", alt: "Main menu of HiddenLab"},
-            {type: "image", src: BASE_PATH + "/Assets/Images/Projects/HiddenLab/StartingPoint.png", alt: "Starting point of the game"},
-            {type: "paragraph", src: BASE_PATH + "/Text/Projects/HiddenLab/Paragraph2.txt"},
-            {type: "paragraph", src: BASE_PATH + "/Text/Projects/HiddenLab/Paragraph3.txt"},
-            {type: "image", src: BASE_PATH + "/Assets/Images/Projects/HiddenLab/Reactor.png", alt: "Reactor from the game"},
+            {type: "paragraph", src:"/Text/Projects/HiddenLab/Paragraph1.txt"},
+            {type: "image", src:"/Assets/Images/Projects/HiddenLab/MainMenu.png", alt: "Main menu of HiddenLab"},
+            {type: "image", src:"/Assets/Images/Projects/HiddenLab/StartingPoint.png", alt: "Starting point of the game"},
+            {type: "paragraph", src:"/Text/Projects/HiddenLab/Paragraph2.txt"},
+            {type: "paragraph", src:"/Text/Projects/HiddenLab/Paragraph3.txt"},
+            {type: "image", src:"/Assets/Images/Projects/HiddenLab/Reactor.png", alt: "Reactor from the game"},
         ];       
     }
 
