@@ -1,4 +1,4 @@
-I am Wilrich van Deventer,currently a 3rd year university student studying BSCeng in Digital Arts at the University of Witwatersrand.
+I am Wilrich van Deventer,currently a 3rd year university student studying BScEng in Digital Arts at the University of Witwatersrand.
 I aspire to be a game designer where the players of my games find joy in playing them or a software engineer where my code
 helps people. I mainly use c# in unity to code
 , but I do have some experience with c++ and python along with html, javascript and css. I would like my code to be inspiration
