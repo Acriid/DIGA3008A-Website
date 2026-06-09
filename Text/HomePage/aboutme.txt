@@ -1,8 +1,7 @@
 I am Wilrich van Deventer,currently a 3rd year university student studying BSCeng in Digital Arts at the University of Witwatersrand.
 I aspire to be a game designer where the players of my games find joy in playing them or a software engineer where my code
 helps people. I mainly use c# in unity to code
-,but I do have some experience with c++ and python along with html,javascript and css. I would like my code to be inspiration
+, but I do have some experience with c++ and python along with html, javascript and css. I would like my code to be inspiration
 for others that where others can see my code and find it useful in fixing their problem or the code inspires them to make
 something new.
-I want this website to show users which projects I am currently working on and which projects I have worked on. This
-is to show off my skill.
+I want this website to show users which projects I am currently working on and which projects I have worked on, to show off my skill.
